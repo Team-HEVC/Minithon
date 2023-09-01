@@ -1,0 +1,1497 @@
+*{
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.navigation-bar{
+    display: flex;
+    height: 55px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F7ECDE;
+    /*background-color:#E9DAC1;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+    */
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+}
+.nav-scroll{
+    background-color:#E9DAC1;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+.nav-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: 'League Spartan','Poppins',sans-serif;
+    font-weight: 600;
+    gap: var(--gap, 5rem);
+}
+.nav-list li{
+    position: relative;
+}
+.nav-list li a{
+    text-decoration: none;
+    color: #1a1a1a;
+    font-weight: 600;
+    font-size: 20px;
+    transition: 0.3s ease;
+}
+.nav-list li a:hover{
+    color: #54BAB9;
+}
+.nav-list li a:hover:after{
+    content: "";
+    height: 2px;
+    bottom: -4px;
+    left: 0px;
+    position: absolute;
+    width: 100%;
+    background-color: #54BAB9;
+    transition: 0.3s ease;
+}
+.logo{
+    padding: 0 0 0 25px;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15px;
+    cursor: pointer;
+}
+.logo img{
+    height: 25px;
+}
+.nav-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-button button{
+    gap: var(--gap, 0.5rem);
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color: transparent;
+    color: black;
+    border: 0;
+    position: relative;
+    cursor: pointer;
+}
+.nav-button input{
+    height: 30px;
+    font-family: 'League Spartan','Poppins',sans-serif;
+    font-weight: 600;
+    color: rgb(123, 122, 122);
+    font-size: 14px;
+    padding-left: 8px;
+    border: 1px solid #1a1a1a;
+    border-radius: 10px;
+    outline: none;
+}
+.totalproduct{
+    position: absolute;
+    border: 3px solid black;
+    background-color: black;
+    color: white;
+    width: 13px;
+    height:13px;
+    font-size: 10px;
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    top: -4px;
+    right: -2px;
+
+}
+.main-section{
+    padding-top: 60px;
+    text-align: center;
+    background-color: #F7ECDE;
+    height: 630px;
+}
+.main-section h1{
+    position: relative;
+    display: block;
+    margin: auto;
+    max-width: fit-content;
+    top: -227px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 192px;
+    height: 120px;
+    text-align: center;
+    color: rgb(33, 37, 41);
+}
+.main-section h2{
+    position: relative;
+    max-width: fit-content;
+    display: block;
+    margin: auto;
+    top:-70px;
+    font-family: sans-serif;
+    font-style:normal;
+    font-weight: 900;
+    font-size: 160px;
+    -webkit-text-stroke: 3px rgb(33, 37, 41);
+    color: transparent;
+    z-index: 0;
+}
+.main-section h3{
+    position: relative;
+    font-family: sans-serif;
+    font-weight: 800;
+    display: block;
+    margin: auto;
+    min-width: fit-content;
+    font-size: 50px;
+    font-style: normal;
+    word-spacing: 800px;
+    top: 170px;
+    color: rgb(33, 37, 41);
+}
+.img4{
+    position: relative;
+    height: 520px;
+    width: 48%;
+    display: block;
+    top: -300px;
+    padding-right: 130px;
+    margin: auto;
+    z-index: 10;
+}
+.shopping-gender{
+    padding: 4% 1% 1%;
+    text-align: center;
+}
+.shopping-gender img{
+    height: 400px;
+    width: 27%;
+    padding: 3% 3% 2%;
+}
+.shopping-gender h1{
+    font-family: 'League Spartan',sans-serif,'Poppins';
+    font-weight: 900;
+    font-size: 50px;
+    padding: 0;
+}
+.New-Arrival{
+    padding: 1% 5% ;
+}
+.New-Arrival h1{
+    font-family: 'League Spartan',sans-serif,'Poppins';
+    font-weight: 900;
+    font-size: 55px;
+    font-style: normal;
+    text-align: center;
+}
+.New-Arrival h2{
+    font-family: 'League Spartan','Poppins',sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: gray;
+    text-align: center;
+    margin: 5px auto 30px;
+    padding-bottom: 30px;
+}
+.box1{
+    display: flex;
+    height: 680px;
+    width: 100%;
+    background-color: #08214A;
+}
+.box1 h1{
+    display: none;
+}
+.box1 img{
+    width: 280px;
+    transition-property: all;
+    transition-duration: 0.7s;
+    transition-timing-function: ease;
+}
+.box1-container1{
+    position: relative;
+    width: 20%;
+    height: 100%;
+    background-color: #E6E2D9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-property: all;
+    transition-duration: 0.7s;
+    transition-timing-function: ease;
+}
+.box1-container2{
+    position: relative;
+    width: 20%;
+    height: 100%;
+    background-color: #64AEDD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-property: all;
+    transition-duration: 0.7s;
+    transition-timing-function: ease;
+}
+.box1-container3{
+    position: relative;
+    width: 20%;
+    height: 100%;
+    background-color:#42A3C7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-property: all;
+    transition-duration: 0.7s;
+    transition-timing-function: ease;
+}
+.box1-container4{
+    position: relative;
+    width: 20%;
+    height: 100%;
+    background-color: #295eb4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-property: all;
+    transition-duration: 0.7s;
+    transition-timing-function: ease;
+}
+.box1-container5{
+    position: relative;
+    width: 20%;
+    height: 100%;
+    background-color: #08214A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-property: all;
+    transition-duration: 0.7s;
+    transition-timing-function: ease;
+}
+.slide-max{
+    width: 50%;
+    transition-property: all;
+    transition-duration: 0.7s;
+    transition-timing-function: ease;
+}
+.slide-max>img{
+    width: 600px;
+    
+    transition-property: all;
+    transition-duration: 0.7s;
+    z-index: 1;
+    
+}/*
+.slide-max>h1{
+    position: absolute;
+    right: 300px;
+    display: block;
+    transform: rotate(-90deg);
+    font-family: sans-serif;
+    font-style: normal;
+    z-index: 4565;
+    font-weight: 900;
+    font-size: 132px;
+    color: white;
+}*/
+.slide-min{
+    width: 12.5%;
+    transition-property: width;
+    transition-duration: 1.5s;
+}
+.slide-min>img{
+    width: 100%;
+}
+.Featured-products{
+    text-align: center;
+    padding: 0 5% 4%;
+}
+.Featured-products .product-container{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+.Featured-products h1,.sales-product h1{
+    font-family: 'League Spartan',sans-serif,'Poppins';
+    font-weight: 900;
+    font-size: 55px;
+    font-style: normal;
+    padding: 70px 0 0;
+}
+.Featured-products h2{
+    font-family: 'League Spartan','Poppins',sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: gray;
+    text-align: center;
+    margin: 5px auto 0;
+    padding-bottom: 30px;
+}
+.Featured-products .card-container,.sales-product .card-container{
+    position: relative;
+    width: 290px;
+    min-width: 250px;
+    padding: 14px 14px 20px;
+    margin: 15px 0;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.06);
+    transition: 0.2s ease;
+}
+.Featured-products .card-container:hover,.sales-product .card-container:hover{
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.2);
+}
+.Featured-products img,.sales-product img{
+    width: 100%;
+    background-color: #e5e5e5;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.desc{
+    text-align: start;
+    padding: 10px 0;
+}
+.desc h5{
+    font-family: 'League Spartan',sans-serif,'Poppins';
+    font-weight: 900;
+    font-size: 22px;
+    font-style: normal;
+    color: #1a1a1a;
+    padding-top: 10px;
+}
+.desc h6{
+    font-family: 'League Spartan',sans-serif,'Poppins';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    color: gray;
+    padding: 6px 0 5px;
+}
+.star{
+    color: rgb(243,181,25);
+    font-size: 14px;
+    padding: 6px 0;
+}
+.desc h4{
+    font-family: 'League Spartan',sans-serif,'Poppins';
+    font-weight: 800;
+    font-size: 18px;
+    font-style: normal;
+    color: #54BAB9;
+    padding: 10px 0 0;
+}
+.btn-cart{
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: #e8f6ea;
+    color: #54BAB9;
+    border: 1px solid #cce7d0;
+    position:absolute;
+    bottom: 20px;
+    right: 17px;
+    cursor: pointer;
+}
+.add-to-cart::before{
+    position: absolute;
+    bottom: 10px;
+    right: 12px;
+}
+.footer{
+    background-color: #e5e5e5;
+}
+.footer-list{
+    display: flex;
+    justify-content:center;
+    align-items:flex-start;
+    gap: var(--gap, 14rem);
+    list-style-type: none;
+    line-height: 35px;
+    padding:20px 0 0;
+}
+.li-heading span{
+    font-family:'Poppins',sans-serif;
+    font-size: 16px;
+    font-weight: 900;
+    padding-bottom: 10px;
+}
+.footer-list ul{
+    list-style-type: none;
+    padding: 0;
+}
+.footer-list li a{
+    font-family: 'Poppins',sans-serif;
+    font-style: normal;
+    font-size: 13px;
+    color: #1a1a1a;
+    text-decoration: none;
+    font-weight: 600;
+}
+.footer-list li a:hover,.footer-credit a:hover{
+    color: #54BAB9;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    transition: 0.3s ease;
+}
+.footer-list i{
+    padding-right: 25px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.footer-list i:hover{
+    color: #54BAB9;
+    transition: 0.3s ease;
+}
+.cin{
+    font-family: 'Poppins',sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 110px 12px 80px;
+}
+.footer-payment{
+    float: right;
+}
+.footer-payment i{
+    padding-left: 25px;
+}
+.footer-credit{
+    margin: auto;
+    text-align: center;
+    font-family: 'Poppins',sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+    padding:10px 0 20px;
+}
+.footer-credit a{
+    text-decoration: none;
+    color: #1a1a1a;
+}
+.countdown{
+    background-color: #F7ECDE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 180px;
+}
+.time-container{
+    width: 36%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 60px;
+    font-family: 'League Spartan','Poppins',sans-serif;
+}
+.countdown h1{
+    width: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-family: 'League Spartan','Poppins',sans-serif;
+    font-weight: 900;
+    font-size: 38px;
+    color: #1a1a1a;
+}
+.time-container div{
+    text-align: center;
+    font-family: 'League Spartan','Poppins',sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    color: #54BAB9;
+}
+.time-container div span{
+    height: 70px;
+    width: 70px;
+    border: 2px solid #54BAB9;
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: center;
+    font-family: 'League Spartan','Poppins',sans-serif;
+    font-weight: 500;
+    font-size: 34px;
+    border-radius: 10px;
+    color: #54BAB9;
+}
+.time-container h2{
+    display: flex;
+    margin: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    font-family: 'League Spartan','Poppins',sans-serif;
+    font-weight: 500;
+    font-size: 45px;
+    color: #54BAB9;
+}
+.subcription{
+    background-color: #F7ECDE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+.subcription h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 34px;
+    text-align: center;
+    line-height: 40px;
+    margin: auto 0 auto 40px;
+    width: 50%;
+}
+.subcription span{
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    justify-items: center;
+    text-align: center;
+}
+.subcription input{
+    font-family: 'League Spartan','Poppins',sans-serif;
+    width: 65%;
+    height: 40px;
+    font-weight: 500;
+    font-size: 18px;
+    margin: auto 0;
+    border: 1px solid #F7ECDE;
+    border-right-width: 0px;
+    outline: none;
+    padding-left: 15px;
+}
+.subcription button{
+    font-family: 'League Spartan','Poppins',sans-serif;
+    width: 130px;
+    font-size: 18px;
+    height: 44px;
+    font-weight: 600;
+    margin: auto 0;
+    border: 1px solid #F7ECDE;
+    border-left-width: 0px;
+    color: white;
+    background-color: red;
+    outline: none;
+    cursor: pointer;
+}
+.features{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    text-align: center;
+    background-color: #F7ECDE;
+    height: 170px;
+    padding: 20px 100px;
+}
+.features-icon{
+    justify-content: space-between;
+}
+.features-icon h5{
+    font-family: 'League Spartan','Poppins',sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+.banner{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 80px 0;
+}
+.banner .banner-row-1 img{
+    width: 31.5%;
+    height: 320px;
+    padding-right: 30px;
+}
+.banner .banner-row-2 img{
+    width: 48%;
+    height: 480px;
+    padding: 40px 0;
+}
+.cart-containers{
+    padding: 20px 4% 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.cart-container-1{
+    width: 70%;
+}
+.heading{
+    font-family: 'League Spartan','Poppins',sans-serif;
+    font-size:36px;
+    color: #1a1a1a;
+    font-weight: 800;
+    text-align: center;
+    padding: 35px 0 0;
+}
+.cart-items{
+    overflow-x:hidden;
+    overflow-y: auto;
+}
+.cart-header{
+    display: flex;
+    width: 99%;
+    padding: 30px 0 15px;
+    font-family: 'League Spartan','Poppins',sans-serif;
+    font-size:20px;
+    justify-content: center;
+    font-weight: 600;
+    color: #645e5e;
+}
+.product-name{
+    width: 40%;
+    display: flex;
+    justify-content:left;
+    align-items: center;
+}
+.p-10{
+    padding-left: 10px;
+}
+.cart-items .product-name img{
+    width: 100px;
+    height:100px;
+}
+.cart-items .quantity img{
+    width: 15px;
+}
+.cart-items .product-name{
+    padding-left:15px;
+}
+.product-name span{
+    margin-left: 10px;
+    line-height: 25px;
+}
+.price,.size,.quantity,.total{
+    width: 15%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product{
+    display: flex;
+    width: 100%;
+    font-family: 'League Spartan','Poppins',sans-serif;
+    font-style: normal;
+    font-size:20px;
+    font-weight: 100;
+    
+}
+.btn-cart1{
+    text-decoration: none;
+    font-family: 'League Spartan','Poppins',sans-serif;
+    font-weight: 600;
+    color: #939393;
+    background-color: white;
+    border: none;
+    font-size: 11px;
+    padding: 0 7px 0 0;
+    cursor: pointer;
+}
+.btn-cart1:hover{
+    text-decoration: none;
+    color: #54BAB9;
+    transition: 0.3s ease;
+}
+.product img{
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.cart-container-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-minus,.btn-plus{
+    background-color: white;
+    width: 30px;
+    border: none;
+    cursor: pointer;
+}
+.btn-plus img,.btn-minus img{
+    padding: 0%;
+}
+.summary{
+    font-family: 'League Spartan','Poppins',sans-serif;
+    background-color: #e5e5e5;
+    color: #1a1a1a;
+    border-radius: 9px;
+    margin-left: 40px;
+    width: 90%;
+    height: 82%;
+}
+.summary h1{
+    padding: 20px 0 15px;
+    font-family: 'League Spartan','Poppins',sans-serif;
+    font-size:20px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.summary h2{
+    padding: 15px 20px;
+    font-family: 'League Spartan','Poppins',sans-serif;
+    font-size:18px;
+    font-weight: 600;
+}
+.codeinput{
+    margin: 17px 0 18px;
+    height: 15px;
+    padding: 10px;
+    width: 230px;
+    font-family: 'League Spartan','Poppins',sans-serif;
+    font-size: 16px;
+    color: #1a1a1a;
+    border-radius: 7px;
+    border-style: none;
+    outline: none;
+}
+.codeapply{
+    margin: 0 0 0 10px;
+    padding: 0 20px;
+    height: 34px;
+    border-radius: 7px;
+    border-style: none;
+    font-size: 14px;
+    font-weight: 800;
+    font-family: 'League Spartan','Poppins',sans-serif;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+.codeapply:hover{
+    background-color: white;
+    color: red;
+}
+.promocode-checking{
+    font-size: 12px;
+    padding: 5px 0 15px 30px;
+}
+.giftcard{
+    padding-bottom: 0px;
+    position: relative;
+}
+.summary h4{
+    padding: 22px 25px 15px;
+    font-family: 'League Spartan','Poppins',sans-serif;
+    font-size:19px;
+    font-weight: 600;
+}
+.summary-right{
+    float: right;
+    font-family: 'League Spartan','Poppins',sans-serif;
+    font-size:15px;
+    font-weight: 400;
+}
+.checkout{
+    width: 100%;
+    height: 42px;
+    font-size: 16px;
+    font-family: 'League Spartan','Poppins',sans-serif;
+    font-weight: 800;
+    color: #645e5e;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    border: 1px solid red;
+    border-radius: 9px;
+}
+.checkout:hover{
+    background-color: white;
+    color: red;
+}
+.verification{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'League Spartan','Poppins',sans-serif;
+    font-size: 14px;
+    font-weight: 900;
+    position: absolute;
+    color: green;
+    top: 55px;
+    right: 40px;
+}
+.verification img{
+    height: 18px;
+    padding-right: 5px;
+}
+
+/*          view product            */
+.show-product{
+    display: flex;
+    margin: 10px 0 30px;
+}
+.filter{
+    width: 21%;
+    font-family: 'League Spartan','Poppins',sans-serif;
+    
+}
+.filter a,.filter li{
+    color: #1a1a1a;
+    text-decoration: none;
+    font-family: 'League Spartan','Poppins',sans-serif;
+    font-size: 19px;
+    padding: 8px 0;
+    font-weight: 500;
+}
+.filter ul{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    align-items: center;
+}
+.ul-2 input{
+    margin-right: 5px;
+}
+.filter ul h1{
+    font-family: 'League Spartan','Poppins',sans-serif;
+    font-size: 21px;
+    padding: 8px 0;
+    font-weight: 800;
+}
+.filter hr{
+    margin: 0 20px;
+}
+.ul-3{
+    display: flex;
+    flex-wrap: wrap;
+}
+.ul-3 li{
+    border: 1px solid #e5e5e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    margin: 2% 6% 2% 0;
+    height: 12px;
+    width: 70px;
+    cursor: pointer;
+}
+.ul-4{
+    display: flex;
+    flex-wrap: wrap;
+}
+.ul-4 li{
+    border: 1px solid #e5e5e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    margin: 2% 6% 2% 0;
+    height: 12px;
+    width: 70px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.ul-4 li span{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.ul-6{
+    display: flex;
+    flex-wrap: wrap;
+}
+.ul-6 li{
+    border: 1px solid #e5e5e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    margin: 2% 7% 2% 0;
+    height: 12px;
+    width: 66px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ul-6 li span{
+    font-size: 14px;
+    color: rgb(243,181,25);
+}
+.ul-7 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.more-filter{
+    font-family: 'League Spartan','Poppins',sans-serif;
+    font-size: 17px;
+    height: 30px;
+    color: #1a1a1a;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #e8f6ea;
+    border: 1px solid #cce7d0;
+    margin-right: 30px;
+    
+}
+.all-product{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    width: 79%;
+}
+.all-product .card-container{
+    width: 250px;
+}
+.all-product .card-container:hover{
+    box-shadow: 20px 20px 30px rgb(0 0 0 / 15%);;
+}
+.show-product-heading{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: #1a1a1a;
+    text-decoration: none;
+    font-family: 'League Spartan','Poppins',sans-serif;
+    font-size: 15px;
+    margin: 30px 0 0 36px;
+}
+.next-prev-section-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0 30px;
+}
+.next-prev-section-button div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    font-family: 'League Spartan','Poppins',sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    color: #54BAB9;
+}
+.boxnumber{
+    font-size: 30px;
+    font-weight: 900;
+    background-color: #e8f6ea;
+    border-radius: 10px;
+    margin: 0 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.product-details{
+    padding: 4% 4% 5%;
+    display: flex;
+}
+.prod-img{
+    width: 55%;
+}
+.img-cont{
+    background-color: #e5e5e5;
+    height: 500px;
+    width: -webkit-fill-available;
+    margin: 0 10px 10px 0;
+    display: block;
+    overflow: hidden;
+    cursor: zoom-in;
+}
+.img-cont img{
+    width: 100%;
+    transition: transform 3s;    
+}
+.img-cont:hover img{
+    transform:scale(1.2);
+}
+.img-secondary{
+    background-color: #e5e5e5;
+    height: 300px;
+    width: 48%;
+    margin: 0 5px;
+}
+.hid-heading{
+    display: none;
+}
+.img-sec{
+    display: flex;
+}
+.img-bg{
+height: 300px;
+}
+.prod-details{
+    width: 40%;
+    margin: 0 10px 0 40px;
+    color: #1a1a1a;
+}
+.prod-details h2{
+    font-family: 'League Spartan','Poppins',sans-serif;
+    font-size: 19px;
+    padding: 15px 0 30px;
+}
+.prod-details h1{
+    font-family: 'League Spartan','Poppins',sans-serif;
+    font-size: 47px;
+    padding: 10px 0 10px;
+}
+.prod-details h3{
+    font-family: 'League Spartan','Poppins',sans-serif;
+    font-size: 25px;
+    padding: 5px 0 14px;
+}
+.prod-details h3 span{
+    font-size: 14px;
+    text-decoration: line-through;
+    color: #939393;
+    text-decoration-color: red ;
+    text-decoration-thickness: 2px;
+
+}
+.prod-details select{
+    font-family: 'League Spartan','Poppins',sans-serif;
+    font-size: 14px;
+    padding: 8px 10px;
+    margin-bottom: 10px;
+    border: 1px solid #1a1a1a;
+    outline: none;
+}
+.add-to-carts{
+    padding: 10px 18px;
+    margin-bottom:35px;
+    margin-left: 10px;
+    color: white;
+    font-weight: 600;
+    border-radius: 3px;
+    font-family: 'League Spartan','Poppins',sans-serif;
+    font-size: 16px;
+    background-color: #54BAB9;
+    border: 1px solid #54BAB9;
+    cursor: pointer;
+}
+.add-to-carts:hover{
+    background-color: #e8f6ea;
+    color: #54BAB9;
+}
+.prod-details p{
+    font-family:sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    color: #1a1a1a;
+    line-height: 24px;
+    margin: 0 0 20px;
+}
+.prod-details input{
+    padding: 5px 10px;
+    width: 60%;
+}
+.prod-details form{
+    position: relative;
+    outline: none;
+    margin: 5px 0 20px;
+}
+.prod-details form input{
+    border: 1px solid #1a1a1a;
+    outline: none;
+    height: 24px;
+}
+.prod-details form h5{
+    font-family: 'League Spartan','Poppins',sans-serif;
+    font-size: 13px;
+    color: #939393;
+    font-weight: 600;
+    padding: 9px 0 10px 0;
+}
+.pincode-check{
+    position: absolute;
+    left: 56%;
+    color: white;
+    padding: 10px 22px;
+    font-weight: 600;
+    font-family: 'League Spartan','Poppins',sans-serif;
+    font-size: 16px;
+    background-color: #54BAB9;
+    border: 1px solid #54BAB9;
+    outline: none;
+    cursor: pointer;
+}
+.pincode-check:hover{
+    background-color: #e8f6ea;
+    color: #54BAB9;
+}
+.prod-details ul{
+    padding: 0;
+}
+.prod-details li{
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #1a1a1a;
+    padding: 6px 0;
+}
+
+
+
+
+
+
+
+/*
+
+@media (min-width:1024px) and (max-width:1561px){
+    .nav-list{
+        gap: var(--gap, 3rem);
+    }
+    .nav-button input{
+        display: none;
+    }
+    .main-section h1{
+        font-size: 135px;
+        top: -170px;
+    }.main-section h2{
+        font-size: 115px;
+    }
+    .img4{
+        width: 60%;
+        max-width: 85%;
+        padding: 0;
+        top: -440px;
+    }
+    .main-section h3{
+        font-size: 60px;
+        word-spacing: normal;
+    }
+}*/
+@media (max-width:600px){
+    .nav-list{
+        gap: var(--gap,1rem)
+    }
+    .nav-button input{
+        display: none;
+    }
+    .main-section{
+        height: 220px;
+    }
+    .main-section h2{
+        font-size: 44px;
+        letter-spacing: 3px;
+        top: -50px;
+        -webkit-text-stroke: 2px rgb(33, 37, 41);
+        -webkit-text-stroke-width: 2px;
+        opacity: 90%;
+    }
+    .main-section h1{
+        font-size: 55px;
+        top: -84px;
+    }
+    .main-section h3{
+        font-size: 27px;
+        top: -5px;
+        word-spacing: 20px;
+    }
+    .img4{
+        width: 250px;
+        padding: 0 20px 0 0;
+        top: -380px;
+        margin: auto;
+    }
+    .shopping-gender h1{
+        font-size:23px;
+        margin-top: 14px;
+    }
+    .shopping-gender img{
+        height: 130px;
+        width: 25%;
+    }
+    .countdown{
+        height: 100px;
+    }
+    .countdown h1{
+        padding: 0;
+        display: inline;
+        font-size: 11px;
+        margin: 0 0 0 20px;
+        line-height: 20px;
+    }
+    .time-container{
+        width: 80%;
+        margin-left: -40px;
+    }
+    .time-container div{
+        font-size: 9px;
+        line-height: 20px;
+    }
+    .time-container div span{
+        height: 30px;
+        width: 30px;
+        font-size: 15px;
+        margin: 0;
+    }
+    .time-container h2{
+        margin: 4px 3px 0;
+        font-size: 30px;
+    }
+    .subcription{
+        height: 100px;
+    }
+    .subcription h1{
+        font-size: 10px;
+        margin-left: -15px;
+        width:50%;
+        line-height: 20px;
+    }
+    .subcription input{
+        width: 80px;
+        font-size: 11px;
+        padding: 0 0 0 8px;
+        margin-left: 10px;
+        height: 20px;
+    }
+    .subcription button{
+        font-size: 11px;
+        width: 60px;
+        height: 24px;
+        padding: 0;
+        margin-right: -25px;
+    }
+    .subcription span{
+        font-size: 9px;
+    }
+    .features{
+        display: flex;
+        height: 90px;
+        width: 100%;
+        gap: 15px;
+        padding: 0;
+        margin-right: 15px;
+    }
+    .features-icon img{
+        height: 25px;
+    }
+    .features-icon{
+        justify-content: space-around;
+    }
+    .features-icon h5{
+        font-size: 7px;
+        margin-top: 10px;
+    }
+    .Featured-products{
+        margin: -45px 0 0;
+    }
+    .Featured-products h1{
+        font-size: 24px;
+    }
+    .Featured-products h2{
+        font-size: 14px;
+        padding-bottom: 10px;
+    }
+    .Featured-products .product-container{
+        padding-top: 0px;
+    }
+    .Featured-products .card-container{
+        min-width: 100px;
+        width: 120px;
+        border-radius: 15px;
+        padding: 9px;
+    }
+    .Featured-products img{
+        height: 120px;
+        border-radius: 15px;
+    }
+    .desc h5{
+        font-size: 15px;
+        padding-top: 2px;
+    }
+    .desc h6{
+        font-size: 10px;
+    }
+    .desc h4{
+        font-size: 14px;
+    }
+    .star{
+        font-size: 9px;
+        padding: 2px 0;
+    }
+    .btn-cart{
+        height: 30px;
+        width: 30px;
+        bottom: 15px;
+        right: 12px;
+        outline: none;
+    }
+    .add-to-cart::before{
+        right: 7px;
+        bottom: 6px;
+    }
+    .banner{
+        display: flex;
+        margin: 0px 25px 0;
+    }
+    .banner .banner-row-1 img{
+        width: 100%;
+        padding: 0;
+        margin-bottom: 15px;
+        height: 180px;
+        justify-content: space-between;
+    }
+    .banner .banner-row-2{
+        text-align: center;
+    }
+    .banner .banner-row-2 img{
+        width: 310px;
+        height: 180px;
+        padding: 0 0 20px;
+    }
+    .New-Arrival .box1{
+        height: 200px;
+    }
+    .New-Arrival img{
+        width: 70px;
+    }
+    .New-Arrival h1{
+        font-size: 24px;
+        padding-top: 5px;
+    }
+    .New-Arrival h2{
+        font-size: 14px;
+        padding-bottom: 0px;
+    }
+    .slide-max{
+        width: 45%;
+    }
+    .slide-max>img{
+        width: 120px;
+    }
+    .slide-min{
+        width: 12.5%;
+        transition-property: width;
+        transition-duration: 1.5s;
+    }
+    .slide-min>img{
+        width: 100%;
+    }
+    .footer-list{
+        gap: 27px;
+        line-height: 12px;
+        padding: 10px 25px 10px 20px;
+    }
+    .footer-list li a{
+        font-size: 5px;
+    }
+    .footer-list li span{
+        font-size: 7px;
+    }
+    .footer-list i{
+        font-size: 10px;
+        text-align: right;
+        padding-right: 6px;
+    }
+    .cin{
+        font-size: 7px;
+        padding: 10px 25px 10px 20px;
+    }
+    .footer-payment i{
+        padding-left: 0px;
+        padding-right: 11px;
+    }
+    .ls{
+        padding: 0;
+    }
+    .footer-credit{
+        font-size: 7px;
+    }
+    .banner3,.nav-list li{
+        display: none;
+    }
+    .product-details{
+        display: block;
+    }
+    .prod-img{
+        width: 100%;
+        padding:5px 8px;
+    }
+    .hid-heading{
+        display: block;
+        font-family: 'League Spartan','Poppins',sans-serif;
+        font-size: 20px;
+        padding: 10px 0 15px;
+    }
+    .img-cont{
+        height: 280px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .img-cont img{
+        width: 350px;
+        transition: transform 3s;    
+    }
+    .img-secondary{
+        height: 120px;
+        width: 48%;
+    }
+    .img-bg{
+        height: 150px;
+    }
+    .prod-details{
+        width: 100%;
+        margin: 0;
+        padding: 0 8px;
+    }
+    .prod-details h2{
+        display: none;
+    }
+    .prod-details h1{
+        font-size: 27px;
+    }
+    .prod-details h3{
+        font-size: 20px;
+    }
+    .prod-details h3 span{
+        font-size: 12px;
+        text-decoration-thickness: 1.5px;
+    }
+    .cart-containers{
+        padding: 20px 4% 50px;
+    }
+    .cart-container-1{
+        width: 100%;
+    }
+    .cart-container-2{
+        display: none;
+    }
+    
+}

@@ -1,16 +1,369 @@
-<!doctype html>
-<html data-theme="light" lang="en">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vite + React</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIKE</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://kit.fontawesome.com/d0890909e1.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=League+Spartan&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./images/favicon.png" type="image/png">
 </head>
-
 <body>
-  <div id="root"></div>
-  <script type="module" src="/src/main.jsx"></script>
+    <header class="navigation-bar">
+        <label class="logo" onclick="location.href='./index.html'"><img src="./images/LOGO.svg" alt=""></label>
+        <ul class="nav-list" type="none">
+            <li><a href="./viewproduct.html">New Arrivals</a></li>
+            <li><a href="./viewproduct.html">Men</a></li>
+            <li><a href="./viewproduct.html">Women</a></li>
+            <li><a href="./viewproduct.html">Kid</a></li>
+            <li><a href="#">Accessories</a></li>
+        </ul>
+        <div class="nav-button">
+        <input type="text" placeholder="Search..">
+        <button type="submit" style="height: 50px;"><i class="fa-solid fa-magnifying-glass fa-2x" ></i></button>
+        <button onclick="location.href='./cart.html'"><i class="fa-solid fa-cart-shopping fa-2x"></i><span class="totalproduct">0</span></button>
+        <button onclick="location.href='./login_page.html'"><i class="fa-regular fa-circle-user fa-2x"></i></button>
+        </div>
+    </header>
+    <section class="main-section">
+        <h2>THE NEW 2023</h2>
+        <h1>AIR JORDON</h1>
+        <h3>UNWRAP POSSIBILITIES</h3>
+        <img  class="img4 d-block" src="./images/MAIN-SECTION.svg" alt="First slide" >
+    </section>
+    <section class="shopping-gender">
+        <h1>Who You Are Shopping For?</h1>
+        <img src="./images/men.webp" alt="">
+        <img src="./images/women.webp" alt="">
+        <img src="./images/kid.webp" alt="">
+    </section>
+    <section class="New-Arrival">
+        <h1>New Arrivals</h1>
+        <h2>summer collection new modern design</h2>
+        <div class="box1">
+          <div class="box1-container1">
+            <h1 class="subheading1">JORDON</h1>
+            <img src="./images/shoes/image 4.svg" alt="" >
+          </div>
+          <div class="box1-container2">
+            <h1 class="subheading2">JORDON</h1>
+            <img src="./images/shoes/image 2.svg" alt="">
+          </div>
+          <div class="box1-container3">
+            <h1 class="subheading3">JORDON</h1>
+            <img src="./images/shoes/image 1.svg" alt="">
+          </div>
+          <div class="box1-container4">
+            <h1 class="subheading4">JORDON</h1>
+            <img src="./images/shoes/image 2.svg" alt="">
+          </div>
+          <div class="box1-container5">
+            <h1 class="subheading5">JORDON</h1>
+            <img src="./images/shoes/image 3.svg" alt="">
+          </div>
+        </div>
+    </section>
+    <section class="Featured-products">
+        <h1>Featured Products</h1>
+        <h2>The new modern design summer collection</h2>
+        <div class="product-container">
+            <div class="card-container">
+                <div onclick="location.href='./product.html'">
+                    <img src="./images/shoes/s1.svg" alt="image1" height="240px" onclick="showDetailProduct(1)">
+                </div>
+                <div class="desc">
+                    <h5>Jordon</h5>
+                    <h6>Air Jordan 4 Retro Premium</h6>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$869</h4>
+                </div>
+                <button class="btn-cart" onclick="addtocart(1)"><i class="fa-solid fa-cart-shopping add-to-cart"></i></button>
+            </div>
+            <div class="card-container">
+                <div onclick="location.href='./product.html'">
+                    <img src="./images/shoes/s2.svg" alt="image1" height="240px" onclick="showDetailProduct(2)">
+                </div>
+                <div class="desc">
+                    <h5>Jordon</h5>
+                    <h6>Air Jordan 4 Retro Fire Red</h6>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$1099</h4>
+                </div>
+                <button class="btn-cart" onclick="addtocart(2)"><i class="fa-solid fa-cart-shopping add-to-cart"></i></button>
+            </div>
+            <div class="card-container">
+                <div onclick="location.href='./product.html'">
+                    <img src="./images/shoes/s3.svg" alt="image1" height="240px" onclick="showDetailProduct(3)">
+                </div>
+                <div class="desc">
+                    <h5>Jordon</h5>
+                    <h6>Air Jordan 4 Retro Raptor</h6>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$999</h4>
+                </div>
+                <button class="btn-cart" onclick="addtocart(3)"><i class="fa-solid fa-cart-shopping add-to-cart"></i></button>
+            </div>
+            <div class="card-container">
+                <div onclick="location.href='./product.html'">
+                    <img src="./images/shoes/s4.svg" alt="image1" height="240px" onclick="showDetailProduct(4)">
+                </div>
+                <div class="desc">
+                    <h5>Jordon</h5>
+                    <h6>Air Jordan 4 Retro Red</h6>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$799</h4>
+                </div>
+                <button class="btn-cart" onclick="addtocart(4)"><i class="fa-solid fa-cart-shopping add-to-cart"></i></button>
+            </div>
+            <div class="card-container">
+                <div onclick="location.href='./product.html'">
+                    <img src="./images/shoes/s5.svg" alt="image1" height="240px" onclick="showDetailProduct(5)" >
+                </div>
+                <div class="desc">
+                    <h5>Jordon</h5>
+                    <h6>Air Jordan Max Pro 1</h6>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$1249</h4>
+                </div>
+                <button class="btn-cart" onclick="addtocart(5)"><i class="fa-solid fa-cart-shopping add-to-cart"></i></button>
+            </div>
+            <div class="card-container">
+                <div onclick="location.href='./product.html'">
+                    <img src="./images/shoes/s6.svg" alt="image1" height="240px" onclick="showDetailProduct(6)">
+                </div>
+                <div class="desc">
+                    <h5>Jordon</h5>
+                    <h6>Air Jordan Force 1</h6>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$869</h4>
+                </div>
+                <button class="btn-cart" onclick="addtocart(6)"><i class="fa-solid fa-cart-shopping add-to-cart"></i></button>
+            </div>
+            <div class="card-container">
+                <div onclick="location.href='./product.html'">
+                    <img src="./images/shoes/s9.svg" alt="image1" height="240px" onclick="showDetailProduct(9)" >
+                </div>
+                <div class="desc">
+                    <h5>Jordon</h5>
+                    <h6>Air Jordan Max 5</h6>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$699</h4>
+                </div>
+                <button class="btn-cart" onclick="addtocart(9)"><i class="fa-solid fa-cart-shopping add-to-cart"></i></button>
+            </div>
+            <div class="card-container">
+                <div onclick="location.href='./product.html'">
+                    <img src="./images/shoes/s13.svg" alt="image1" height="240px" onclick="showDetailProduct(13)" >
+                </div>
+                <div class="desc">
+                    <h5>Jordon</h5>
+                    <h6>Air Jordan 5 Retro</h6>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$849</h4>
+                </div>
+                <button class="btn-cart" onclick="addtocart(13)"><i class="fa-solid fa-cart-shopping add-to-cart"></i></button>
+            </div>
+        </div>
+    </section>
+    <section class="countdown">
+        <h1>Make a purchase before <br> and get <span style="color: #54BAB9;">free delivery </span>and <span style="color: #54BAB9;">upto 60% off</span></h1>
+        <div class="time-container">
+            <div ><span id="days"></span>Days</div><h2>:</h2>
+            <div ><span id="hours"></span>Hours</div><h2>:</h2>
+            <div ><span id="min"></span>Minutes</div><h2>:</h2>
+            <div ><span id="sec"></span>Seconds</div>
+        </div>
+    </section>
+    <section class="Featured-products">
+        <h1>Hot Deal On Sales</h1> 
+        <h2>The new modern design summer collection</h2>
+        <div class="product-container">
+            <div class="card-container">
+                <div onclick="location.href='./product.html'">
+                    <img src="./images/shoes/s1.svg" alt="image1" height="240px" onclick="showDetailProduct(1)">
+                </div>
+                <div class="desc">
+                    <h5>Jordon</h5>
+                    <h6>Air Jordan 4 Retro Premium</h6>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$869</h4>
+                </div>
+                <button class="btn-cart" onclick="addtocart(1)"><i class="fa-solid fa-cart-shopping add-to-cart"></i></button>
+            </div>
+            <div class="card-container">
+                <div onclick="location.href='./product.html'">
+                    <img src="./images/shoes/s2.svg" alt="image1" height="240px" onclick="showDetailProduct(2)">
+                </div>
+                <div class="desc">
+                    <h5>Jordon</h5>
+                    <h6>Air Jordan 4 Retro Fire Red</h6>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$1099</h4>
+                </div>
+                <button class="btn-cart" onclick="addtocart(2)"><i class="fa-solid fa-cart-shopping add-to-cart"></i></button>
+            </div>
+            <div class="card-container">
+                <div onclick="location.href='./product.html'">
+                    <img src="./images/shoes/s3.svg" alt="image1" height="240px" onclick="showDetailProduct(3)">
+                </div>
+                <div class="desc">
+                    <h5>Jordon</h5>
+                    <h6>Air Jordan 4 Retro Raptor</h6>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$999</h4>
+                </div>
+                <button class="btn-cart" onclick="addtocart(3)"><i class="fa-solid fa-cart-shopping add-to-cart"></i></button>
+            </div>
+            <div class="card-container">
+                <div onclick="location.href='./product.html'">
+                    <img src="./images/shoes/s4.svg" alt="image1" height="240px" onclick="showDetailProduct(4)">
+                </div>
+                <div class="desc">
+                    <h5>Jordon</h5>
+                    <h6>Air Jordan 4 Retro Raptor</h6>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$799</h4>
+                </div>
+                <button class="btn-cart" onclick="addtocart(4)"><i class="fa-solid fa-cart-shopping add-to-cart"></i></button>
+            </div>
+        </div>
+    </section>
+    <section class="features">
+        <div class="features-icon"><img src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/70/null/external-quality-logistic-delivery-kiranshastry-lineal-kiranshastry.png"/><br><h5>100% ORIGINAL GUARANTEE</h5></div>
+        <div class="features-icon"><img src="https://img.icons8.com/ios/64/null/security-checked--v1.png"/><h5>100% SAFE AND SECURE <br> PAYMENT</h5></div>
+        <div class="features-icon"><img src="https://img.icons8.com/external-konkapp-detailed-outline-konkapp/74/null/external-fast-delivery-logistic-and-delivery-konkapp-detailed-outline-konkapp.png"/><h5 style="margin-top: 6px;">DELIVERY WITHIN 48 HOURS</h5></div>
+        <div class="features-icon"><img src="https://img.icons8.com/external-victoruler-outline-victoruler/64/null/external-return-box-logistics-victoruler-outline-victoruler.png"/><br><h5>RETURN WITHIN 30 DAYS</h5></div>
+    </section>
+    <br>
+    
+    <section class="banner">
+        <div class="banner-row-1"><img src="./images/b1.webp" alt=""><img src="./images/b2.webp" alt=""><img class="banner3" src="./images/b4.webp" alt="" style="padding-right: 0;"></div>
+        <div class="banner-row-2"><img  class="banner3" src="./images/b5.webp" style="padding-right: 40px;" alt=""><img src="./images/b3.webp" alt=""></div>
+    </section>
+    <section class="subcription">
+        <h1>Get The Latest Deals And More <br> <span>NEW RELEASES,SPECIAL OFFER AND MORE</span></h1>
+        <div style="width: 40%;display: flex;">
+            <input type="email" name="" placeholder="Enter Your Email" id="">
+        <button >Subscribe</button>
+        </div>
+    </section>
+    <section class="footer">
+        <ul class="footer-list">
+          <li>
+            <ul>
+              <li class="li-heading"><span>HELP YOU</span></li>
+              <li><a href="http://" target="_blank" rel="noopener noreferrer"> Contact Us</a></li>
+              <li><a href="http://" target="_blank" rel="noopener noreferrer"> Privacy Policy</a></li>
+              <li><a href="http://" target="_blank" rel="noopener noreferrer"> Check Orders</a></li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <li class="li-heading"><span>USEFUL LINKS</span></li>
+              <li><a href="http://" target="_blank" rel="noopener noreferrer"> Terms and Conditions</a></li>
+              <li><a href="http://" target="_blank" rel="noopener noreferrer"> Connect with us on WhatsApp</a></li>
+              <li><a href="http://" target="_blank" rel="noopener noreferrer"> Become Our Partner</a></li>  
+              <li><a href="http://" target="_blank" rel="noopener noreferrer"> COVID Safety Guidelines</a></li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <li class="li-heading"><span>COMPANY</span></li>
+              <li><a href="http://" target="_blank" rel="noopener noreferrer"> About Us</a></li>
+              <li><a href="http://" target="_blank" rel="noopener noreferrer"> Press Release</a></li>
+              <li><a href="http://" target="_blank" rel="noopener noreferrer"> Awards & Recognitiony</a></li>
+              <li><a href="http://" target="_blank" rel="noopener noreferrer"> Investor Relations</a></li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <li class="li-heading"><span>FOLLOW  US</span></li>
+            <li><i class="fa-brands fa-twitter fa-xl"></i><i class="fa-brands fa-facebook-f fa-xl"></i><i class="fa-brands fa-instagram fa-xl"></i><i class="fa-solid fa-envelope fa-xl ls"></i></li>
+           </ul>
+          </li>
+        </ul>
+        <br>
+        <h1 class="cin"><span class="nike-cin">NIKE INDIA - CIN: L192xxxxxxxxxxxxx7261 </span><span class="footer-payment"><i class="fa-brands fa-cc-mastercard fa-xl"></i><i class="fa-brands fa-cc-visa fa-xl"></i></span></h1>
+        <hr>
+        <h1 class="footer-credit">© Copyright 2023 NIKE <br>Made by <a href="https://github.com/SumilSuthar197">SUMIL SUTHAR</a></h1>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="./products.js"></script>
+    <script src="./index.js"></script>
 </body>
-
 </html>

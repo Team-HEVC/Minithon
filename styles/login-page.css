@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    background-color: #f8f8f8;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    text-align: center;
+}
+body{
+    margin: 0;
+    border: 0;
+    height: 100%;
+}
+.content-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.left-side{
+    text-align: center;
+    width: 50%;
+    height: 100%;
+    margin: auto;
+}
+.right-side{
+    width: 50%;
+    height: 100%;
+}
+.form{
+    width: 55%;
+    margin: auto;
+    margin-bottom: 70px;
+}
+.t1{
+    font-size: 38px;
+    color: #1a1a1a;
+}
+.t2{
+    font-size: 18px;
+    color: #767678;
+    font-weight: 500;
+    padding: 0px 0 30px;
+}
+.t3,.t4{
+    font-size: 16px;
+    color: #1a1a1a;
+    font-weight: 600;
+    margin: auto;
+    text-align: left;
+}
+.i1,.i2{
+    width: 97%;
+    height: 35px;
+    border-radius: 10px;
+    color: #1a1a1a;
+    border: 1px solid #1a1a1a;
+    font-family: 'League Spartan','Poppins',sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: left;
+    margin: 3px 0 20px;
+    padding-left: 10px;
+    outline: none;
+}
+.t5{
+    text-align: left;
+    color: #1a1a1a;
+    font-size: 12px;
+    margin: 6px auto 0;
+}
+.t6{
+    text-decoration: none;
+    color: #1a1a1a;
+    float: right;
+}
+.b1,.b2{
+    width: 100%;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+.b1{
+    background-color: #c0c0cf;
+    border: 2px solid #c0c0cf;
+    margin: 5px 0 20px;
+}
+.b2{
+    border: 2px solid #c0c0cf;
+    background-color: #c0c0cf;
+    margin: 20px 0 10px;
+}
+.b2 img{
+    background-color: #c0c0cf;
+    padding-right: 10px;
+    height: 25px;
+}
+.t7{
+    color: #1a1a1a;
+    font-size: 12px;
+}
+.t7 a{
+    color: red;
+}
+
+.b1:hover{
+    background-color:rgb(182, 171, 171);
+    /*background-color:rgb(244, 142, 142) ;*/
+}
+.b2:hover img,.b2:hover{
+    background-color:rgb(182, 171, 171);
+}
+.t6:hover{
+    color: red;
+    text-decoration: underline;
+}

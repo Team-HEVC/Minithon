@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIKE</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://kit.fontawesome.com/d0890909e1.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=League+Spartan&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" href="./images/favicon.png" type="image/png">
+  </head>
+<body>
+    <header class="navigation-bar" style="position: static;">
+        <label class="logo" onclick="location.href='./index.html'"><img src="./images/LOGO.svg" alt=""></label>
+        <ul class="nav-list" type="none">
+          <li><a href="./viewproduct.html">New Arrivals</a></li>
+          <li><a href="./viewproduct.html">Men</a></li>
+          <li><a href="./viewproduct.html">Women</a></li>
+          <li><a href="./viewproduct.html">Kid</a></li>
+          <li><a href="#">Accessories</a></li>
+        </ul>
+        <div class="nav-button">
+        <input type="text" placeholder="Search..">
+        <button type="submit" style="height: 50px;"><i class="fa-solid fa-magnifying-glass fa-xl" ></i></button>
+        <button onclick="location.href='./cart.html'"><i class="fa-solid fa-cart-shopping fa-xl"></i><span class="totalproduct">0</span></button>
+        <button onclick="location.href='./login_page.html'"><i class="fa-regular fa-circle-user fa-xl"></i></button>
+        </div>
+    </header>
+    <h1 class="heading">Shopping cart items</h1>
+    <section class="cart-containers">
+      <div class="cart-container-1">
+        <div class="cart-header">
+            <h5 class="product-name p-10">Product</h5>
+            <h5 class="size" >Size</h5>
+            <h5 class="price" >Price</h5>
+            <h5 class="quantity" >Quantity</h5>
+            <h5 class="total" >Total Price</h5>
+        </div>
+        <hr>
+        <section class="cart-items" style="height: 500px;">
+          <!--<div class="product">
+            <h5 class="product-name"><img style="width: 120px;height: 128px;" src="./images/shoes/s1.svg" alt=""><span>NIKE AIR JORDON<br><button class="btn-cart1"><i class="remove fa-solid fa-trash"></i> Remove item</button> <button class="btn-cart1"><i class="fa-solid fa-heart"></i> Move to favorite</button></span></h5>
+            <h5 class="size">11</h5>
+            <h5 class="price">$548</h5>
+            <h5 class="quantity">1</h5>
+            <h5 class="total">$548</h5>
+          </div><hr>-->
+        </section>
+      </div>
+      <div class="cart-container-2" style="width: 30%; height: 500px;margin: auto;">
+        <div class="summary">
+          <h1>Order Summary</h1>
+          <hr style="margin: 0 15px 15px;">
+          <h2>Sub total <span class="summary-right">$00.00</span></h2>
+          <h2>Tax<span class="summary-right">$00.00</span></h2>
+          <h2>Shipping<span class="summary-right">FREE <div style="display: inline;text-decoration:line-through;text-decoration-color:red;text-decoration-thickness:2px;margin-left: 3px;"> $50</div></span></h2>
+          <h2 class="giftcard" >Giftcard/Discount code <span class="summary-right"></span><br><input type="text" class="codeinput"><button class="codeapply" onclick="discount()">Apply</button></h2><hr style="margin: 0 15px;">
+          <h4>Total<span class="summary-right">$00.00</span></h4>
+          <button class="checkout">CHECKOUT</button>
+      </div>
+      </div>
+    </section>
+    <section class="subcription">
+        <h1>Get The Latest Deals And More <br> <span>NEW RELEASES,SPECIAL OFFER AND MORE</span></h1>
+        <div style="width: 40%;display: flex;">
+          <input type="email" name="" placeholder="Enter Your Email" id="">
+      <button >Subscribe</button>
+      </div>
+    </section>
+    <section class="footer">
+        <ul class="footer-list">
+          <li>
+            <ul>
+              <li class="li-heading"><span>HELP YOU</span></li>
+              <li><a href="http://" target="_blank" rel="noopener noreferrer"> Contact Us</a></li>
+              <li><a href="http://" target="_blank" rel="noopener noreferrer"> Privacy Policy</a></li>
+              <li><a href="http://" target="_blank" rel="noopener noreferrer"> Check Orders</a></li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <li class="li-heading"><span>USEFUL LINKS</span></li>
+              <li><a href="http://" target="_blank" rel="noopener noreferrer"> Terms and Conditions</a></li>
+              <li><a href="http://" target="_blank" rel="noopener noreferrer"> Connect with us on WhatsApp</a></li>
+              <li><a href="http://" target="_blank" rel="noopener noreferrer"> Become Our Partner</a></li>  
+              <li><a href="http://" target="_blank" rel="noopener noreferrer"> COVID Safety Guidelines</a></li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <li class="li-heading"><span>COMPANY</span></li>
+              <li><a href="http://" target="_blank" rel="noopener noreferrer"> About Us</a></li>
+              <li><a href="http://" target="_blank" rel="noopener noreferrer"> Press Release</a></li>
+              <li><a href="http://" target="_blank" rel="noopener noreferrer"> Awards & Recognitiony</a></li>
+              <li><a href="http://" target="_blank" rel="noopener noreferrer"> Investor Relations</a></li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <li class="li-heading"><span>FOLLOW  US</span></li>
+            <li><i class="fa-brands fa-twitter fa-xl"></i><i class="fa-brands fa-facebook-f fa-xl"></i><i class="fa-brands fa-instagram fa-xl"></i><i class="fa-solid fa-envelope fa-xl"></i></li>
+           </ul>
+          </li>
+        </ul>
+        <br>
+        <h1 class="cin"><span class="nike-cin">NIKE INDIA - CIN: L192xxxxxxxxxxxxx7261 </span><span class="footer-payment"><i class="fa-brands fa-cc-mastercard fa-xl"></i><i class="fa-brands fa-cc-visa fa-xl"></i></span></h1>
+        <hr>
+        <h1 class="footer-credit">© Copyright 2023 NIKE <br>Made by <a href="https://github.com/SumilSuthar197">SUMIL SUTHAR</a></h1>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="./products.js"></script>
+</body>
+</html>

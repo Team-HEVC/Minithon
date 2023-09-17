@@ -1,76 +1,151 @@
-const products=[
-    {
-        id:1,
-        name:"Air Jordan 4 Retro Premium",
-        price:869,
-        image:"s1"
-    },
-    {
-        id:2,
-        name:"Air Jordan 4 Retro Fire Red",
-        price:1099,
-        image:"s2"
-    },
-    {
-        id:3,
-        name:"Air Jordan 4 Retro Raptor",
-        price:999,
-        image:"s3"
-    },
-    {
-        id:4,
-        name:"Air Jordan 4 Retro Red",
-        price:799,
-        image:"s4"
-    },
-    {
-        id:5,
-        name:"Air Jordan Max Pro 1",
-        price:1249,
-        image:"s5"
-    },
-    {
-        id:6,
-        name:"Air Jordan Force 1",
-        price:869,
-        image:"s6"
-    },
-    {
-        id:7,
-        name:"Air Jordan Max 3",
-        price:599,
-        image:"s7"
-    },
-    {
-        id:8,
-        name:"Air Jordan 1 Premium",
-        price:999,
-        image:"s8"
-    },
-    {
-        id:9,
-        name:"Air Jordan Max 5",
-        price:699,
-        image:"s9"
-    },
-    {
-        id:10,
-        name:"Air Jordan Edge 30",
-        price:999,
-        image:"s10"
-    },
-    {
-        id:14,
-        name:"Air Jordan Edge max 50",
-        price:1599,
-        image:"s14"
-    },
-    {
-        id:13,
-        name:"Air Jordan 5 Retro",
-        price:849,
-        image:"s13"
-    }
+// const products=[
+//     {
+//         id:1,
+//         name:"Air Jordan 4 Retro Premium",
+//         price:869,
+//         image:"s1"
+//     },
+//     {
+//         id:2,
+//         name:"Air Jordan 4 Retro Fire Red",
+//         price:1099,
+//         image:"s2"
+//     },
+//     {
+//         id:3,
+//         name:"Air Jordan 4 Retro Raptor",
+//         price:999,
+//         image:"s3"
+//     },
+//     {
+//         id:4,
+//         name:"Air Jordan 4 Retro Red",
+//         price:799,
+//         image:"s4"
+//     },
+//     {
+//         id:5,
+//         name:"Air Jordan Max Pro 1",
+//         price:1249,
+//         image:"s5"
+//     },
+//     {
+//         id:6,
+//         name:"Air Jordan Force 1",
+//         price:869,
+//         image:"s6"
+//     },
+//     {
+//         id:7,
+//         name:"Air Jordan Max 3",
+//         price:599,
+//         image:"s7"
+//     },
+//     {
+//         id:8,
+//         name:"Air Jordan 1 Premium",
+//         price:999,
+//         image:"s8"
+//     },
+//     {
+//         id:9,
+//         name:"Air Jordan Max 5",
+//         price:699,
+//         image:"s9"
+//     },
+//     {
+//         id:10,
+//         name:"Air Jordan Edge 30",
+//         price:999,
+//         image:"s10"
+//     },
+//     {
+//         id:14,
+//         name:"Air Jordan Edge max 50",
+//         price:1599,
+//         image:"s14"
+//     },
+//     {
+//         id:13,
+//         name:"Air Jordan 5 Retro",
+//         price:849,
+//         image:"s13"
+//     }
+// ];
+
+const products = [
+  {
+    id: 1,
+    name: "RoboXplorer",
+    price: 15000,
+    image: "s1",
+  },
+  {
+    id: 2,
+    name: "CyberTech Innovator",
+    price: 18000,
+    image: "s2",
+  },
+  {
+    id: 3,
+    name: "MechanoMaster",
+    price: 16000,
+    image: "s3",
+  },
+  {
+    id: 4,
+    name: "TechSavvyBot",
+    price: 13000,
+    image: "s4",
+  },
+  {
+    id: 5,
+    name: "FutureGuardian",
+    price: 19000,
+    image: "s5",
+  },
+  {
+    id: 6,
+    name: "RoboCompanion",
+    price: 15000,
+    image: "s6",
+  },
+  {
+    id: 7,
+    name: "QuantumBot",
+    price: 14000,
+    image: "s7",
+  },
+  {
+    id: 8,
+    name: "AeroDroid",
+    price: 18000,
+    image: "s8",
+  },
+  {
+    id: 9,
+    name: "SparkTronix",
+    price: 13000,
+    image: "s9",
+  },
+  {
+    id: 10,
+    name: "MechWarrior Prime",
+    price: 18000,
+    image: "s10",
+  },
+  {
+    id: 14,
+    name: "Air Jordan Edge max 50",
+    price: 24000,
+    image: "s14",
+  },
+  {
+    id: 13,
+    name: "Air Jordan 5 Retro",
+    price: 15000,
+    image: "s13",
+  },
 ];
 
 
@@ -105,8 +180,8 @@ function displayCart(){
     cart.forEach((item)=>{
       cartProducts.innerHTML+=`
         <div class="product">
-          <h5 class="product-name"><img src="./images/shoes/${item.image}.svg" alt=""><span>${item.name}<br><button class="btn-cart1" onclick="removeItem(${item.id})"><i class="remove fa-solid fa-trash"></i> Remove item</button> <button class="btn-cart1"><i class="fa-solid fa-heart"></i> Move to favorite</button></span></h5>
-          <h5 class="size">11</h5>
+          <h5 class="product-name"><img src="./images/images/${item.image}-removebg-preview.png" alt=""><span>${item.name}<br><button class="btn-cart1" onclick="removeItem(${item.id})"><i class="remove fa-solid fa-trash"></i> Remove item</button> <button class="btn-cart1"><i class="fa-solid fa-heart"></i> Move to favorite</button></span></h5>
+          <h5 class="size">v1</h5>
           <h5 class="price">$${item.price}</h5>
           <h5 class="quantity"><button class="btn-minus" onclick="changeNumberOfUnits('minus',${item.id})"><img  src="https://img.icons8.com/external-simple-solid-edt.graphics/50/null/external-Minus-add-and-remove-simple-solid-edt.graphics-10.png"/></button>${item.incart}<button class="btn-plus" onclick="changeNumberOfUnits('plus',${item.id})"><img src="https://img.icons8.com/material-sharp/24/null/plus--v1.png"/></button></h5>
           <h5 class="total">$${item.price * item.incart}</h5>
@@ -140,7 +215,7 @@ function displayCart(){
     if(discountAmount>0 && cart.length>0 && giftcard){
         let giftcard=document.querySelector(".giftcard");
         giftcard.innerHTML=`
-        Giftcard/Discount code <span class="summary-right">-$${discountAmount.toFixed(2)}</span><br><input type="text" class="codeinput" style="width: 315px;" placeholder="NIKE2023" readonly><div class="verification"><img src="https://img.icons8.com/color/32/null/verified-account--v1.png"/>APPLIED</div>`
+        Giftcard/Discount code <span class="summary-right">-$${discountAmount.toFixed(2)}</span><br><input type="text" class="codeinput" style="width: 315px;" placeholder="FLAT500" readonly><div class="verification"><img src="https://img.icons8.com/color/32/null/verified-account--v1.png"/>APPLIED</div>`
     }
 }
 
@@ -182,7 +257,7 @@ function changeNumberOfUnits(action,id){
 
 function discount(){
     let discountCode=document.querySelector(".codeinput").value.toUpperCase();
-    if(discountCode==='NIKE2023'){
+    if(discountCode==='Flat500'){
         discountAmount=500;
         localStorage.setItem("discountAmount",discountAmount);
     }
@@ -210,10 +285,10 @@ function displayitems(){
             productToDisplay.innerHTML+=`
             <div class="card-container" >
                 <div onclick="location.href='./product.html'">
-                    <img src="./images/shoes/${products[i].image}.svg" alt="image1" height="240px" onclick="showDetailProduct(${products[i].id})">
+                    <img src="./images/images/${products[i].image}-removebg-preview.png" alt="image1" height="240px" onclick="showDetailProduct(${products[i].id})">
                 </div>
                     <div class="desc">
-                        <h5>Jordon</h5>
+                        <h5></h5>
                         <h6>${products[i].name}</h6>
                         <div class="star">
                             <i class="fas fa-star"></i>
@@ -262,10 +337,10 @@ if(productDetails){
             productDetails.innerHTML=`
             <div class="prod-img">
                 <h2 class="hid-heading">Home/Men/Shoes</h2>
-                <div class="img-cont"><img style="height: 550px;" class="img-main" src="./images/shoes/${item.image}.svg" alt=""></div>
+                <div class="img-cont"><img style="height: 550px;" class="img-main" src="./images/images/${item.image}-removebg-preview.png" alt=""></div>
                 <div class="img-sec">
-                    <div class="img-cont img-bg"><img class="img-secondary" src="./images/shoes/${item.image}.svg" alt=""></div>
-                    <div class="img-cont img-bg"><img class="img-secondary" src="./images/shoes/${item.image}.svg" alt=""></div>
+                    <div class="img-cont img-bg"><img class="img-secondary" src="./images/images/${item.image}-removebg-preview.png" alt=""></div>
+                    <div class="img-cont img-bg"><img class="img-secondary" src="./images/images/${item.image}-removebg-preview.png" alt=""></div>
                 </div>
             </div>
             <div class="prod-details">

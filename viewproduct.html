@@ -1,168 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NIKE</title>
-    <link rel="stylesheet" href="./styles/style.css">
-    <script src="https://kit.fontawesome.com/d0890909e1.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=League+Spartan&family=Poppins:wght@700&display=swap" rel="stylesheet">
-    <link rel="icon" href="./images/favicon.png" type="image/png">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NIKE</title>
+  <link rel="stylesheet" href="./styles/style.css">
+  <script src="https://kit.fontawesome.com/d0890909e1.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan&family=Poppins:wght@700&display=swap"
+    rel="stylesheet">
+  <link rel="icon" href="./images/favicon.png" type="image/png">
 </head>
+
 <body>
-    <header class="navigation-bar">
-        <label class="logo" onclick="location.href='./index.html'"><img src="./images/LOGO.svg" alt=""></label>
-        <ul class="nav-list" type="none">
-          <li><a href="./viewproduct.html">New Arrivals</a></li>
-          <li><a href="./viewproduct.html">Men</a></li>
-          <li><a href="./viewproduct.html">Women</a></li>
-          <li><a href="./viewproduct.html">Kid</a></li>
-          <li><a href="#">Accessories</a></li>
-        </ul>
-        <div class="nav-button">
-        <input type="text" placeholder="Search..">
-        <button type="submit" style="height: 50px;"><i class="fa-solid fa-magnifying-glass fa-2x" ></i></button>
-        <button onclick="location.href='./cart.html'"><i class="fa-solid fa-cart-shopping fa-2x"></i><span class="totalproduct">0</span></button>
-        <button onclick="location.href='./login_page.html'"><i class="fa-regular fa-circle-user fa-2x"></i></button>
-        </div>
-    </header>
-    <div class="show-product-heading">
-        <h1 >Home/Men/shoes</h1>
+  <header class="navigation-bar">
+    <label class="logo" onclick="location.href='./index.html'"><img src="./images/LOGO.svg" alt=""></label>
+    <ul class="nav-list" type="none">
+      <li><a href="./viewproduct.html">New Arrivals</a></li>
+      <li><a href="./viewproduct.html">Men</a></li>
+      <li><a href="./viewproduct.html">Women</a></li>
+      <li><a href="./viewproduct.html">Kid</a></li>
+      <li><a href="#">Accessories</a></li>
+    </ul>
+    <div class="nav-button">
+      <input type="text" placeholder="Search..">
+      <button type="submit" style="height: 50px;"><i class="fa-solid fa-magnifying-glass fa-2x"></i></button>
+      <button onclick="location.href='./cart.html'"><i class="fa-solid fa-cart-shopping fa-2x"></i><span
+          class="totalproduct">0</span></button>
+      <button onclick="location.href='./login_page.html'"><i class="fa-regular fa-circle-user fa-2x"></i></button>
     </div>
-    <section class="show-product">
-        <div class="filter" style="overflow-y:auto;">
-            <ul type="none" class="ul-1">
-                <li><a href="">Lifestyle</a></li>
-                <li><a href="">Jordan</a></li>
-                <li><a href="">Running</a></li>
-                <li><a href="">Training & Gym</a></li>
-                <li><a href="">Athletics</a></li>
-                <li><a href="">Walking</a></li>
-            </ul>
-            <hr>
-            <ul type="none" class="ul-2">
-                <h1>Gender</h1>
-                <li><input type="checkbox" name="men" id="men" checked>Men</li>
-                <li><input type="checkbox" name="women" id="women">Women</li>
-                <li><input type="checkbox" name="kids" id="kids">Kids</li>
-            </ul>
-            <hr>
-            <ul type="none" class="ul-3">
-                <h1 style="width: 100%;">Size</h1>
-                <li class="shoes-size" onclick="size(3);">3</li>
-                <li class="shoes-size" onclick="size(3.5);">3.5</li>
-                <li class="shoes-size" onclick="size(4);">4</li>
-                <li class="shoes-size" onclick="size(4.5);">4.5</li>
-                <li class="shoes-size" onclick="size(5);">5</li>
-                <li class="shoes-size" onclick="size(5.5);">5.5</li>
-                <li class="shoes-size" onclick="size(6);">6</li>
-                <li class="shoes-size" onclick="size(6.5);">6.5</li>
-                <li class="shoes-size" onclick="size(7);">7</li>
-                <li class="shoes-size" onclick="size(7.5);">7.5</li>
-                <li class="shoes-size" onclick="size(8);">8</li>
-                <li class="shoes-size" onclick="size(8.5);">8.5</li>
-                <li class="shoes-size" onclick="size(9);">9</li>
-                <li class="shoes-size" onclick="size(9.5);">9.5</li>
-                <li class="shoes-size" onclick="size(10);">10</li>
-                <li class="shoes-size" onclick="size(10.5);">10.5</li>
-                <li class="shoes-size" onclick="size(11);">11</li>
-                <li class="shoes-size" onclick="size(12);">12</li>
-            </ul>
-            <hr>
-            <ul type="none" class="ul-5">
-                <h1>Price Range</h1>
-                <li style=" padding-bottom: 0;width: 90%;font-size: 17px;">$0 <span id="max-range" style="float: right;">$3000</span></li>
-                <li><input type="range" name="xyz" id="input-price" min="500" step="100" value="3000"  max="3000" onchange="updateRange();" style="width:90%;"></li>
-            </ul>
-            <hr>
-            <ul type="none" class="ul-4">
-              <h1 style="width: 100%;">Color</h1>
-              <li class="shoes-color" onclick="color('Red');">Red</li>
-              <li class="shoes-color" onclick="color('Green');">Green</li>
-              <li class="shoes-color" onclick="color('Black');">Black</li>
-              <li class="shoes-color" onclick="color('White');">White</li>
-              <li class="shoes-color" onclick="color('Yellow');">Yellow</li>
-              <li class="shoes-color" onclick="color('Blue');">Blue</li>
-              <li class="shoes-color" onclick="color('Brown');">Brown</li>
-              <li class="shoes-color" onclick="color('Purple');">Purple</li>
-              <li class="shoes-color" onclick="color('Aqua');">Aqua</li>
-              <li class="shoes-color" onclick="color('Pink');">Pink</li>
-              <li class="shoes-color" onclick="color('Grey');">Grey</li>
-              <li class="shoes-color" onclick="color('Gold');">Gold</li>
-          </ul>
-          <hr>
-          <ul type="none" class="ul-6">
-            <h1 style="width: 100%;">Star</h1>
-            <li class="shoes-star" style="width: 110px;" onclick="star(5);"><span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span></li>
-            <li class="shoes-star" style="width: 110px;" onclick="star(4);"><span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span></li>
-            <li class="shoes-star" onclick="star(3);"><span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span></li>
-            <li class="shoes-star" onclick="star(2);"><span><i class="fas fa-star"></i><i class="fas fa-star"></i></span></li>
-            <li class="shoes-star" onclick="star(1);"><span><i class="fas fa-star"></i></span></li>
-          </ul>
-          <hr>
-          <ul class="ul-7" type="none">
-            <li><button class="more-filter">+ Add more filter</button></li>
-          </ul>
-          
-        </div>
-        <div class="all-product Featured-products" style="padding: 0;">
-            <div class="product-container">
-            </div>  
-        </div>
-    </section>
-    <div class="next-prev-section-button">
-        <div><i class="fa-solid fa-arrow-left"></i></div>
-        <div class="boxnumber">1</div>
-        <div><i class="fa-solid fa-arrow-right"></i></div>
+  </header>
+  <div class="show-product-heading">
+    <h1>Home/Products</h1>
+  </div>
+  <section class="show-product">
+    <div class="all-product Featured-products" style="padding: 0;">
+      <div class="product-container">
+      </div>
     </div>
-    <section class="subcription">
-        <h1>Get The Latest Deals And More <br> <span>NEW RELEASES,SPECIAL OFFER AND MORE</span></h1>
-        <div style="width: 40%;display: flex;">
-            <input type="email" name="" placeholder="Enter Your Email " id="">
-        <button >Subscribe</button>
-        </div>
-    </section>
-    <section class="footer">
-        <ul class="footer-list">
-          <li>
-            <ul>
-              <li class="li-heading"><span>HELP YOU</span></li>
-              <li><a href="http://" target="_blank" rel="noopener noreferrer"> Contact Us</a></li>
-              <li><a href="http://" target="_blank" rel="noopener noreferrer"> Privacy Policy</a></li>
-              <li><a href="http://" target="_blank" rel="noopener noreferrer"> Check Orders</a></li>
-            </ul>
-          </li>
-          <li>
-            <ul>
-              <li class="li-heading"><span>USEFUL LINKS</span></li>
-              <li><a href="http://" target="_blank" rel="noopener noreferrer"> Terms and Conditions</a></li>
-              <li><a href="http://" target="_blank" rel="noopener noreferrer"> Connect with us on WhatsApp</a></li>
-              <li><a href="http://" target="_blank" rel="noopener noreferrer"> Become Our Partner</a></li>  
-              <li><a href="http://" target="_blank" rel="noopener noreferrer"> COVID Safety Guidelines</a></li>
-            </ul>
-          </li>
-          <li>
-            <ul>
-              <li class="li-heading"><span>COMPANY</span></li>
-              <li><a href="http://" target="_blank" rel="noopener noreferrer"> About Us</a></li>
-              <li><a href="http://" target="_blank" rel="noopener noreferrer"> Press Release</a></li>
-              <li><a href="http://" target="_blank" rel="noopener noreferrer"> Awards & Recognitiony</a></li>
-              <li><a href="http://" target="_blank" rel="noopener noreferrer"> Investor Relations</a></li>
-            </ul>
-          </li>
-          <li>
-            <ul>
-              <li class="li-heading"><span>FOLLOW  US</span></li>
-            <li><i class="fa-brands fa-twitter fa-xl"></i><i class="fa-brands fa-facebook-f fa-xl"></i><i class="fa-brands fa-instagram fa-xl"></i><i class="fa-solid fa-envelope fa-xl"></i></li>
-           </ul>
-          </li>
+  </section>
+  <div class="next-prev-section-button">
+    <div><i class="fa-solid fa-arrow-left"></i></div>
+    <div class="boxnumber">1</div>
+    <div><i class="fa-solid fa-arrow-right"></i></div>
+  </div>
+  <section class="subcription">
+    <h1>Get The Latest Deals And More <br> <span>NEW RELEASES,SPECIAL OFFER AND MORE</span></h1>
+    <div style="width: 40%;display: flex;">
+      <input type="email" name="" placeholder="Enter Your Email " id="">
+      <button>Subscribe</button>
+    </div>
+  </section>
+  <section class="footer">
+    <ul class="footer-list">
+      <li>
+        <ul>
+          <li class="li-heading"><span>HELP YOU</span></li>
+          <li><a href="http://" target="_blank" rel="noopener noreferrer"> Contact Us</a></li>
+          <li><a href="http://" target="_blank" rel="noopener noreferrer"> Privacy Policy</a></li>
+          <li><a href="http://" target="_blank" rel="noopener noreferrer"> Check Orders</a></li>
         </ul>
-        <br>
-        <h1 class="cin"><span class="nike-cin">NIKE INDIA - CIN: L192xxxxxxxxxxxxx7261 </span><span class="footer-payment"><i class="fa-brands fa-cc-mastercard fa-xl"></i><i class="fa-brands fa-cc-visa fa-xl"></i></span></h1>
-        <hr>
-        <h1 class="footer-credit">© Copyright 2023 NIKE <br>Made by <a href="https://github.com/SumilSuthar197">SUMIL SUTHAR</a></h1>
-    </section>
-    <script src="./products.js"></script>
+      </li>
+      <li>
+        <ul>
+          <li class="li-heading"><span>USEFUL LINKS</span></li>
+          <li><a href="http://" target="_blank" rel="noopener noreferrer"> Terms and Conditions</a></li>
+          <li><a href="http://" target="_blank" rel="noopener noreferrer"> Connect with us on WhatsApp</a></li>
+          <li><a href="http://" target="_blank" rel="noopener noreferrer"> Become Our Partner</a></li>
+          <li><a href="http://" target="_blank" rel="noopener noreferrer"> COVID Safety Guidelines</a></li>
+        </ul>
+      </li>
+      <li>
+        <ul>
+          <li class="li-heading"><span>COMPANY</span></li>
+          <li><a href="http://" target="_blank" rel="noopener noreferrer"> About Us</a></li>
+          <li><a href="http://" target="_blank" rel="noopener noreferrer"> Press Release</a></li>
+          <li><a href="http://" target="_blank" rel="noopener noreferrer"> Awards & Recognitiony</a></li>
+          <li><a href="http://" target="_blank" rel="noopener noreferrer"> Investor Relations</a></li>
+        </ul>
+      </li>
+      <li>
+        <ul>
+          <li class="li-heading"><span>FOLLOW US</span></li>
+          <li><i class="fa-brands fa-twitter fa-xl"></i><i class="fa-brands fa-facebook-f fa-xl"></i><i
+              class="fa-brands fa-instagram fa-xl"></i><i class="fa-solid fa-envelope fa-xl"></i></li>
+        </ul>
+      </li>
+    </ul>
+    <br>
+    <h1 class="cin"><span class="nike-cin">NIKE INDIA - CIN: L192xxxxxxxxxxxxx7261 </span><span
+        class="footer-payment"><i class="fa-brands fa-cc-mastercard fa-xl"></i><i
+          class="fa-brands fa-cc-visa fa-xl"></i></span></h1>
+    <hr>
+    <h1 class="footer-credit">© Copyright 2023 NIKE <br>Made by <a href="https://github.com/SumilSuthar197">SUMIL
+        SUTHAR</a></h1>
+  </section>
+  <script src="./products.js"></script>
 </body>
+
 </html>
